@@ -7,10 +7,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "bacon/bacon-qr-code": "^2.0",
         "laravel/framework": "^13.0",
         "laravel/sanctum": "^4.3",
         "laravel/tinker": "^3.0",
-        "livewire/livewire": "^4.2"
+        "livewire/livewire": "^4.2",
+        "paragonie/constant_time_encoding": "^3.1",
+        "pragmarx/google2fa-laravel": "^3.0",
+        "simplesoftwareio/simple-qrcode": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -26,7 +30,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers/SGTPHelper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

@@ -34,5 +34,15 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+     'gps' => [
+        'api_url' => env('GPS_API_URL', 'https://api.gpsprovider.com/v1'),
+        'api_key' => env('GPS_API_KEY', ''),
+        'timeout' => env('GPS_TIMEOUT', 10),
+    ],
+
+    'sms' => [
+        'api_key' => env('SMS_API_KEY', ''),
+        'sender' => env('SMS_SENDER', 'SGTP'),
+    ],
 
 ];
